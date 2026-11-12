@@ -1,0 +1,13 @@
+
+# Clipboard CRM Data Hygiene — Daily Schedule
+#
+# Run every day at 7:00 AM (machine local time).
+#
+# Replace YOUR_USERNAME with your macOS username.
+# Replace PYTHON_PATH with the absolute path to the
+# Python interpreter in your project virtual environment.
+#
+# This is a schedule example only.
+# Installation into crontab is not required.
+
+0 7 * * * cd /Users/YOUR_USERNAME/Desktop/clipboard-assessment && /usr/bin/env bash -c 'source .daily_run_env && PYTHON_PATH daily_run.py --apply >> daily_run.log 2>&1'

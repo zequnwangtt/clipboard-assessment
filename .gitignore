@@ -1,0 +1,44 @@
+
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Secrets and credentials
+.env
+.env.*
+.daily_run_env
+*.pem
+*.key
+
+# Local review databases
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+backups/
+
+# CRM snapshots and local state
+crm_snapshot.json
+proposals.json
+proposals_before_*.json
+proposals_daily_test.json
+proposals_daily_*.json
+daily_proposals_*/
+*_receipt.json
+
+# Temporary and backup scripts
+review_app_backup.py
+review_app_before_*.py
+
+# Local runtime files
+.daily_run.lock
+daily_run.log
+*.log
+
+# Local diagnostic output
+.pytest_cache/
+.coverage
+htmlcov/
